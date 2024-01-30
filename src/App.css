@@ -1,0 +1,321 @@
+body {
+  margin: 2%;
+  background-color: rgb(65, 65, 65);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Fader component CSS */
+.coverImg {
+  height: 100%;
+  width: 100%;
+  display: block;
+  position:fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  opacity: 100%;
+}
+
+#fade-out {
+  opacity: 0;
+  transition: 
+    opacity 3s ease 1s,
+    z-index 1s ease 4s;
+  z-index: -1;
+}
+/* End Fader CSS */
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 3rem 2rem 3rem;
+}
+
+#navlink {
+  display: flex;
+  text-align: center;
+  border-bottom-style: solid;
+  border-width: 1px;
+  padding-bottom: 2px;
+  margin: .2rem .3rem;
+  text-shadow: 2px;
+}
+
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+a:hover {
+  color:rgb(188, 147, 22)
+}
+
+.intro-box {
+  display: flex;
+  align-items: center;
+  line-height: 1.8;
+  background-color: black;
+  border-radius: 10px;
+  margin: 2rem;
+}
+
+.portrait {
+  height: 300px;
+  margin: 2rem
+}
+
+#intro-portrait {
+  height: 100%;
+  box-shadow: 5px 5px 10px 3px #7e1a1a, -5px -5px 10px 3px rgb(158, 133, 111);
+  border-radius: 10px;
+}
+
+.intro-text {
+  margin: 2rem
+}
+
+h1 {
+  text-align: center;
+  margin: 2rem 0;
+  background-color: rgb(65,65,65);
+  display: block;
+  position: relative;
+  height: 2.7rem;
+  top: 10%;
+  text-wrap: nowrap;
+}
+
+h2 {
+  text-align: center;
+  margin: 0;
+  display: block;
+  background-color: rgb(65,65,65);
+  position: relative;
+  top:5%;
+  height: 2.5rem;
+}
+
+.summary-header {
+  margin-top: 2rem;
+}
+
+iframe {
+  width: 100%;
+  height: 900px;
+  margin: 2rem 0 2rem 0;
+  border: none;
+}
+
+#header-text {
+  position: relative;
+  top: 13%;
+}
+
+hr {
+  width: 50%;
+  height: 1.4px;
+  border-width: 0;
+  background-color: rgb(0, 0, 0);
+}
+
+#highlight-box {
+  margin: 2rem 1rem 1rem 1rem;
+  display: flex;
+  columns: 3;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#hl-item {
+  width: 12rem;
+  border: 1px;
+  border-radius: 1%;
+}
+
+#hl-item:hover {
+  opacity: 20%;
+  transition: .4s;
+}
+
+h4 {
+  text-align: center;
+}
+
+.book-container {
+  position: relative;
+  margin: 1rem;
+  text-align: center;
+}
+
+#book-preview-link {
+  font-weight: 600;
+  font-size: large;
+  z-index: -1;
+  display: flex;
+  position: absolute;
+  top: 30%;
+  left: 26%;
+  width: 50%;
+}
+
+.header-wrapper {
+  background: linear-gradient(to right, rgb(65,65,65), white, rgb(65,65,65));
+  height: 2.8rem;
+  margin: 0 20% 0 20%;
+  text-align: center;
+}
+
+.name-wrapper {
+  background: linear-gradient(to right, rgb(65,65,65), white, rgb(65,65,65));
+  height: 3.3rem;
+  margin: 0 20% 0 20%;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+#quote {
+  font-style: italic;
+  font-size: larger;
+  margin: 4rem;
+}
+
+.message-form {
+  text-align: center;
+  margin: auto;
+  width: fit-content;
+}
+
+#contact-form {
+  text-align: left;
+}
+
+.message-sent {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+#name-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  width: 99.8%;
+  margin: 1% 0 1% 0;
+  border-color: rgba(24, 24, 24, 0.497);
+}
+
+textarea {
+  width: 100%;
+  margin-top: 1%;
+}
+
+#submit-button {
+  width: 101%;
+  margin: 2% 0 0 0;
+  padding: 2%;
+  background-color: rgb(189, 189, 189);
+  color: rgb(65,65,65);
+  box-shadow: 3px 3px 2px rgb(96, 96, 96);
+}
+
+#drop-button {
+  width: 50px;
+  height: 40px;
+  background-color: rgb(65,65,65);
+  border: 2px solid;
+  border-radius: 5px;
+  border-color: rgb(132, 132, 132);
+  color: rgb(188, 147, 22);
+  /* display: none; */
+}
+
+/* Preview page-specific */
+
+.book-title {
+  margin: 3rem 0 2rem 0;
+}
+
+.preview-title {
+  margin: 2rem auto 1rem auto;
+  top: 0;
+  height: auto;
+}
+
+.summary {
+  margin: 1.5rem 3rem 2rem 3rem;
+}
+
+.paragraph {
+  margin: 2rem;
+  text-align: left;
+}
+
+.ital {
+  font-style: italic;
+}
+
+hr {
+  background-color: white;
+}
+
+#by {
+  text-align: center;
+  margin: 0;
+}
+
+#shirt {
+  width: 30%
+}
+
+@media (min-width: 850px) {
+  .contact-header {
+      top: 6%;
+  }
+}
+
+@media (max-width: 650px) {
+  #drop-button {
+    display: inline-block;
+    margin-top: 1rem;
+  }
+
+  .heading {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .intro-box {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem
+  }
+
+  .portrait {
+    margin: 1rem
+  }
+
+  .intro-text {
+    margin: 1rem
+  }
+}
