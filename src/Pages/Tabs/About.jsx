@@ -6,11 +6,11 @@ const About = () => {
       <div className='body'>
         <header>
           <nav>
-              <a id="navlink" href={'/'}>HOME</a>
-              <a id="navlink" href={'/about'}>MISSION STATEMENT</a>
-              <a id="navlink" href={'/charity'}>CHARITY T-SHIRTS</a>
-              <a id="navlink" href={'/stroke'}>MY STROKE HISTORY</a>
-              <a id="navlink" href={'/homeless'}>MY HOMELESS HISTORY</a>
+            <Link to='/' id="navlink">HOME</Link>
+            <Link to='/mission' id="navlink">MISSION STATEMENT</Link>
+            <Link to='/charity' id="navlink">CHARITY T-SHIRTS</Link>
+            <Link to='/stroke' id="navlink">MY STROKE HISTORY</Link>
+            <Link to='/homeless' id="navlink">MY HOMELESS HISTORY</Link>
           </nav>
         </header>
         <div className="name-wrapper">

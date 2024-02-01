@@ -5,7 +5,7 @@ import macCover from './assets/mac-cover.png'
 import unfoundCover from './assets/unfound-cover.jpg'
 import angelCover from './assets/angel-cover.jpg'
 import salemChild from './assets/salem-child.jpg'
-// import Emailer from './Functions/emailer'
+import { Link } from 'react-router-dom'
 import { sendCustomEmail } from './Functions/Email'
 
 import { useEffect, useState } from 'react'
@@ -59,20 +59,16 @@ function App() {
       <div className='body'>
         <div className="heading">
           <h2>Eaglefire Productions</h2>
-          <button id='drop-button' onClick={displayNav}>
-            <i className="fa-solid fa-bars-staggered"></i>
-          </button>
         </div>
-        {navOn ? 
         <header>
           <nav>
-              <a id="navlink" href={'/mission'}>MISSION STATEMENT</a>
-              <a id="navlink" href={'/about'}>ABOUT THE AUTHOR</a>
-              <a id="navlink" href={'/charity'}>CHARITY T-SHIRTS</a>
-              <a id="navlink" href={'/stroke'}>MY STROKE HISTORY</a>
-              <a id="navlink" href={'/homeless'}>MY HOMELESS HISTORY</a>
+              <Link to='/mission' id="navlink">MISSION STATEMENT</Link>
+              <Link to='/about' id="navlink">ABOUT THE AUTHOR</Link>
+              <Link to='/charity' id="navlink">CHARITY T-SHIRTS</Link>
+              <Link to='/stroke' id="navlink">MY STROKE HISTORY</Link>
+              <Link to='/homeless' id="navlink">MY HOMELESS HISTORY</Link>
           </nav>
-        </header> : <></>}
+        </header>
         <div>
           <div className="name-wrapper">
               <h1>Salem Pflueger</h1>
