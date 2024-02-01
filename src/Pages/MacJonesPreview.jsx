@@ -1,23 +1,18 @@
 import '../App.css'
-import MacJonesFifty from './MacJonesFifty'
+import macFifty from '../assets/MAC10.pdf'
+import { Link } from 'react-router-dom'
 
 const MacJonesPreview = () => {
   return (
     <>
       <div>
-        <header>
-            <nav>
-                <a id="navlink" href="/about.html">ABOUT</a>
-                <a id="navlink" href="/works.html">WORKS</a>
-                <a id="navlink" href="/contact.html">CONTACT</a>
-            </nav>
-        </header>
-        <h1 style={{marginBottom:1+'rem'}}>Mac Jones</h1>
-        <h2>the Plumber-Astronaut who Saved the World</h2>
-        <h2>Book 1</h2>
-        <hr />
-        <h2 className='summary-header'>Summary and Preview</h2>
-        <MacJonesFifty/>
+        <div className="heading">
+          <h2>Eaglefire Productions</h2>
+            <Link to='/'>
+              <button id='drop-button'>Back</button>
+            </Link>
+        </div>
+        <iframe src={macFifty} title='Mac Jones Book 1 Preview'/>
       </div>
     </>
   )

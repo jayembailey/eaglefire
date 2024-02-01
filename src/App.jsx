@@ -81,7 +81,7 @@ function App() {
               <p><span style={{'fontStyle' : 'italic'}}>Hi, I'm Salem...</span><br/>
               <span style={{'fontStyle' : 'italic', 'fontWeight' : 'bold'}}>Agents</span> and everyone, thanks for stopping by!
               Please, browse arond and take a look at the summary/first
-              10 pages of my books below. Kindly contact me <a href="#contact-box" style={{'fontWeight' : 'bold'}}>here</a> for the
+              10 pages of my books below. Kindly contact me <Link href="#contact-box" style={{'fontWeight' : 'bold'}}>here</Link> for the
               first 50 pages. Welcome to <span style={{'fontStyle' : 'italic'}}>
               eaglefire productions... the readiness is all!</span>
               </p>
@@ -95,38 +95,38 @@ function App() {
                 </div>
                 <div id="highlight-box">
                     <div className="book-container">
-                          <a href={"/daisypreview"}>
+                          <Link to='/daisypreview'>
                             <img id="hl-item" src={daisyCover} alt='daisy and the dream defenders book cover' />
                             <p id="book-preview-link">Summary and First 10 Pages</p>
-                          </a>
+                          </Link>
                         <h4>Daisy and the<br/>Dream Defenders</h4>
                     </div>
                     <div className="book-container">
-                        <a href={'/horizonpreview'}>
+                        <Link to='/horizonpreview'>
                           <img id="hl-item" src={horizonCover} alt='upon horizon book cover' />
                             <p id="book-preview-link">Summary and First 10 Pages</p>
-                        </a>
+                        </Link>
                         <h4>Upon Horizon</h4>
                     </div>
                     <div className="book-container">
-                        <a href={'/angelpreview'}>
+                        <Link to='/angelpreview'>
                           <img id="hl-item" src={angelCover} alt='the angel dilemma book cover' />
                             <p id="book-preview-link">Summary and First 10 Pages</p>
-                        </a>
+                        </Link>
                         <h4>The Angel Dilemma</h4>
                     </div>
                     <div className="book-container">
-                        <a href={'/unfoundpreview'}>
+                        <Link to='/unfoundpreview'>
                           <img id="hl-item" src={unfoundCover} alt='the unfound book cover' />
                             <p id="book-preview-link">Summary and First 10 Pages</p>
-                        </a>
+                        </Link>
                         <h4>The Unfound</h4>
                     </div>
                     <div className="book-container">
-                        <a href={'macjonespreview'}>
+                        <Link to='/macjonespreview'>
                           <img id="hl-item" src={macCover} alt='mac jones book cover' />
                             <p id="book-preview-link">Summary and First 10 Pages</p>
-                        </a>
+                        </Link>
                         <h4>Mac Jones<br/>The Plumber-Astronaut<br/>who Saved the World</h4>
                     </div>
                 </div>

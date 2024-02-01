@@ -1,22 +1,19 @@
 import '../App.css'
-import UnfoundFifty from './UnfoundFifty'
+import tuFifty from '../assets/TU10.pdf'
+import { Link } from 'react-router-dom'
 
 const UnfoundPreview = () => {
   return (
     <>
       <div>
-            <header>
-                <nav>
-                    <a id="navlink" href="/about.html">ABOUT</a>
-                    <a id="navlink" href="/works.html">WORKS</a>
-                    <a id="navlink" href="/contact.html">CONTACT</a>
-                </nav>
-            </header>
-            <h1>The Unfound</h1>
-            <hr />
-            <h2 className='summary-header'>Summary and Preview</h2>
-            <UnfoundFifty/>
+        <div className="heading">
+          <h2>Eaglefire Productions</h2>
+          <Link to='/'>
+              <button id='drop-button'>Back</button>
+          </Link>
         </div>
+        <iframe src={tuFifty} title='The Unfound Preview'/>
+      </div>
     </>
   )
 }

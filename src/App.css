@@ -86,6 +86,7 @@ h1 {
   text-align: center;
   margin: 2rem 0;
   background-color: rgb(65,65,65);
+  color: rgb(188, 147, 22);
   display: block;
   position: relative;
   height: 2.7rem;
@@ -109,8 +110,8 @@ h2 {
 
 iframe {
   width: 100%;
-  height: 900px;
-  margin: 2rem 0 2rem 0;
+  height: 800px;
+  margin: auto;
   border: none;
 }
 
@@ -234,14 +235,19 @@ textarea {
 }
 
 #drop-button {
-  width: 50px;
+  width: 70px;
   height: 40px;
   background-color: rgb(65,65,65);
   border: 2px solid;
   border-radius: 5px;
   border-color: rgb(132, 132, 132);
-  color: rgb(188, 147, 22);
-  /* display: none; */
+  color:rgb(189, 189, 189)
+}
+
+#drop-button:hover {
+  background-color: rgb(189, 189, 189);
+  color: rgb(65, 65, 65);
+  border-color: rgb(188, 147, 22);
 }
 
 /* Preview page-specific */
