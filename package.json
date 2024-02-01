@@ -1,6 +1,5 @@
 {
   "name": "salem-react",
-  "homepage": "http://efp-dev-site.netlify.app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
