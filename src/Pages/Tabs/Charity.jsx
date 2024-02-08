@@ -16,7 +16,7 @@ const Charity = () => {
           </nav>
         </header>
         <div className="name-wrapper">
-            <h1 style={{'color': 'rgb(188, 147, 22)'}}>Charities</h1>
+            <h1>Charities</h1>
         </div>
         <p className="paragraph">
           Allow me to say a few words about the charities to which I’m committed and what they mean to

@@ -15,7 +15,7 @@ const Homeless = () => {
           </nav>
         </header>
         <div className="name-wrapper">
-            <h1 style={{'color': 'rgb(188, 147, 22)'}}>My Homeless Story</h1>
+            <h1>My Homeless Story</h1>
         </div>
         <p className="paragraph">
           This won’t make sense to most people, not at all.

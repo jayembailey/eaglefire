@@ -14,7 +14,7 @@ const Stroke = () => {
           </nav>
         </header>
         <div className="name-wrapper">
-            <h1 style={{'color': 'rgb(188, 147, 22)'}}>My Stroke History</h1>
+            <h1>My Stroke History</h1>
         </div>
         <p className="paragraph">
           I had a major stroke about five years ago and nearly died. In fact, statistically, I had a better

@@ -36,7 +36,7 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
-  margin: 2rem 3rem 2rem 3rem;
+  margin: 2rem 12rem ;
 }
 
 #navlink {
@@ -55,7 +55,7 @@ a {
 }
 
 a:hover {
-  color:rgb(188, 147, 22)
+  color:rgb(225, 175, 26)
 }
 
 .intro-box {
@@ -86,7 +86,7 @@ h1 {
   text-align: center;
   margin: 2rem 0;
   background-color: rgb(65,65,65);
-  color: rgb(188, 147, 22);
+  color: rgb(225, 175, 26);
   display: block;
   position: relative;
   height: 2.7rem;
@@ -99,6 +99,7 @@ h2 {
   margin: 0;
   display: block;
   background-color: rgb(65,65,65);
+  color:rgb(225, 175, 26);
   position: relative;
   top:5%;
   height: 2.5rem;
@@ -168,14 +169,14 @@ h4 {
 }
 
 .header-wrapper {
-  background: linear-gradient(to right, rgb(65,65,65), white, rgb(65,65,65));
+  background: linear-gradient(to right, rgb(65,65,65), rgb(225, 175, 26), rgb(65,65,65));
   height: 2.8rem;
   margin: 0 20% 0 20%;
   text-align: center;
 }
 
 .name-wrapper {
-  background: linear-gradient(to right, rgb(65,65,65), white, rgb(65,65,65));
+  background: linear-gradient(to right, rgb(65,65,65), rgb(225, 175, 26), rgb(65,65,65));
   height: 3.3rem;
   margin: 0 20% 0 20%;
   text-align: center;
@@ -240,14 +241,14 @@ textarea {
   background-color: rgb(65,65,65);
   border: 2px solid;
   border-radius: 5px;
-  border-color: rgb(132, 132, 132);
-  color:rgb(189, 189, 189)
+  border-color: rgb(225, 175, 26);
+  color:rgb(225, 175, 26)
 }
 
 #drop-button:hover {
-  background-color: rgb(189, 189, 189);
-  color: rgb(65, 65, 65);
-  border-color: rgb(188, 147, 22);
+  background-color: rgb(96, 96, 96);
+  color: rgb(225, 175, 26);
+  border-color: rgb(225, 175, 26);
 }
 
 /* Preview page-specific */
@@ -267,8 +268,9 @@ textarea {
 }
 
 .paragraph {
-  margin: 2rem;
-  text-align: left;
+  margin: 2rem 12rem;
+  font-size: large;
+  text-align: justify;
 }
 
 .ital {
@@ -291,6 +293,16 @@ hr {
 @media (min-width: 850px) {
   .contact-header {
       top: 6%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .paragraph {
+    margin: 2rem 6rem
+  }
+
+  nav {
+    margin: 2rem 6rem
   }
 }
 
@@ -323,5 +335,9 @@ hr {
 
   .intro-text {
     margin: 1rem
+  }
+
+  .paragraph {
+    margin: 2rem 3rem
   }
 }

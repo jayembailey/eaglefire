@@ -15,7 +15,7 @@ const Mission = () => {
             </nav>
             </header>
             <div className="name-wrapper">
-                <h1 style={{'color': 'rgb(188, 147, 22)'}}>My Mission</h1>
+                <h1>My Mission</h1>
             </div>
             <p className='paragraph'>
               I’ve been thinking about my mission statement from about the time I was in sixth grade,

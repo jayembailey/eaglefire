@@ -58,7 +58,7 @@ function App() {
     </div> */}
       <div className='body'>
         <div className="heading">
-          <h2>Eaglefire Productions</h2>
+          <h2>eaglefire productions</h2>
         </div>
         <header>
           <nav>

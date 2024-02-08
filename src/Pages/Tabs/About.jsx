@@ -15,7 +15,7 @@ const About = () => {
           </nav>
         </header>
         <div className="name-wrapper">
-            <h1 style={{'color': 'rgb(188, 147, 22)'}}>About Me</h1>
+            <h1>About Me</h1>
         </div>
         <p className="paragraph">
           Following your bliss offers no guarantees in life...but here I go again.
