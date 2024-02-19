@@ -1,6 +1,6 @@
 body {
   margin: 2%;
-  background-color: rgb(65, 65, 65);
+  background-color: rgb(28, 28, 28);
   color: rgb(255, 255, 255);
   text-align: center;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -30,7 +30,25 @@ body {
 .heading {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 2rem;
+}
+
+.header-logo {
+  max-width: 250px;
+  border-radius: 10%;
+  box-shadow: 5px 3px 15px black;
+}
+
+#efp-heading {
+  color: rgb(225, 175, 26);
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+}
+
+.fa-brands {
+  margin: 0rem 1rem;
 }
 
 nav {
@@ -64,7 +82,7 @@ a:hover {
   line-height: 1.8;
   background-color: black;
   border-radius: 10px;
-  margin: 2rem;
+  margin: 2rem 10rem;
 }
 
 .portrait {
@@ -74,7 +92,6 @@ a:hover {
 
 #intro-portrait {
   height: 100%;
-  box-shadow: 5px 5px 10px 3px #7e1a1a, -5px -5px 10px 3px rgb(158, 133, 111);
   border-radius: 10px;
 }
 
@@ -85,7 +102,7 @@ a:hover {
 h1 {
   text-align: center;
   margin: 2rem 0;
-  background-color: rgb(65,65,65);
+  background-color: rgb(28, 28, 28);
   color: rgb(225, 175, 26);
   display: block;
   position: relative;
@@ -110,9 +127,8 @@ h2 {
 }
 
 iframe {
-  width: 100%;
+  width: 90%;
   height: 800px;
-  margin: auto;
   border: none;
 }
 
@@ -129,7 +145,7 @@ hr {
 }
 
 #highlight-box {
-  margin: 2rem 1rem 1rem 1rem;
+  margin: 1rem 1rem 1rem 1rem;
   display: flex;
   columns: 3;
   flex-wrap: wrap;
@@ -138,7 +154,7 @@ hr {
 
 #hl-item {
   width: 12rem;
-  border: 1px;
+  height: 16rem;
   border-radius: 1%;
 }
 
@@ -169,14 +185,14 @@ h4 {
 }
 
 .header-wrapper {
-  background: linear-gradient(to right, rgb(65,65,65), rgb(225, 175, 26), rgb(65,65,65));
+  background: linear-gradient(to right, rgb(28, 28, 28), rgb(225, 175, 26), rgb(65,65,65));
   height: 2.8rem;
   margin: 0 20% 0 20%;
   text-align: center;
 }
 
 .name-wrapper {
-  background: linear-gradient(to right, rgb(65,65,65), rgb(225, 175, 26), rgb(65,65,65));
+  background: linear-gradient(to right, rgb(28, 28, 28), rgb(225, 175, 26), rgb(28, 28, 28));
   height: 3.3rem;
   margin: 0 20% 0 20%;
   text-align: center;
@@ -189,7 +205,7 @@ h3 {
 #quote {
   font-style: italic;
   font-size: larger;
-  margin: 4rem;
+  margin: 0 0 2rem 0;
 }
 
 .message-form {
@@ -233,22 +249,6 @@ textarea {
   background-color: rgb(189, 189, 189);
   color: rgb(65,65,65);
   box-shadow: 3px 3px 2px rgb(96, 96, 96);
-}
-
-#drop-button {
-  width: 70px;
-  height: 40px;
-  background-color: rgb(65,65,65);
-  border: 2px solid;
-  border-radius: 5px;
-  border-color: rgb(225, 175, 26);
-  color:rgb(225, 175, 26)
-}
-
-#drop-button:hover {
-  background-color: rgb(96, 96, 96);
-  color: rgb(225, 175, 26);
-  border-color: rgb(225, 175, 26);
 }
 
 /* Preview page-specific */
@@ -304,9 +304,13 @@ hr {
   nav {
     margin: 2rem 6rem
   }
+
+  .intro-box {
+    margin: 2rem 6rem
+  }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 700px) {
   #drop-button {
     display: inline-block;
     margin-top: 1rem;
@@ -315,6 +319,10 @@ hr {
   .heading {
     flex-direction: column;
     align-items: center;
+  }
+
+  .social-box {
+    margin-top: 2rem
   }
 
   nav {

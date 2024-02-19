@@ -18,7 +18,7 @@ const sendCustomEmail = (details) => {
             //end template variables
         )
         .then((response) => {
-            console.log(response + details)
+            console.log(response + details.first_name)
         })
         .catch((error) => {
             console.log(error)

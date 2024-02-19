@@ -10,15 +10,18 @@ const Homeless = () => {
             <Link to='/' id="navlink">HOME</Link>
             <Link to='/mission' id="navlink">MISSION STATEMENT</Link>
             <Link to='/charity' id="navlink">CHARITY T-SHIRTS</Link>
-            <Link to='/stroke' id="navlink">MY STROKE HISTORY</Link>
+            <Link to='/stroke' id="navlink">DAISY ORIGIN</Link>
             <Link to='/about' id="navlink">ABOUT THE AUTHOR</Link>
           </nav>
         </header>
         <div className="name-wrapper">
-            <h1>My Homeless Story</h1>
+            <h1>Angel Origin</h1>
         </div>
         <p className="paragraph">
-          This won’t make sense to most people, not at all.
+          What follows is the singular inspiration for <span className='ital'>The Angel Dilemma.</span>
+        </p>
+        <p className="paragraph">
+          It won’t make sense to most people—not at all.
         </p>
         <p className="paragraph">
           As always, I don’t like revealing all of this about myself and please don’t imagine this is some
@@ -119,7 +122,7 @@ const Homeless = () => {
         <p className="paragraph">
           We walked out to our cars and I watched her drive away—I never heard from her again—like an
           angel who swooped in to save me. I sat there in my car a while, hesitating, and thinking...
-          <span className="ital">has itcome to this?</span>
+          <span className="ital"> has it come to this?</span>
         </p>
         <p className="paragraph">
           And then I called the lady at the lot because yes, <span className="ital">it had come to this.</span>

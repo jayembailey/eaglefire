@@ -10,12 +10,17 @@ const Stroke = () => {
             <Link to='/mission' id="navlink">MISSION STATEMENT</Link>
             <Link to='/charity' id="navlink">CHARITY T-SHIRTS</Link>
             <Link to='/about' id="navlink">ABOUT THE AUTHOR</Link>
-            <Link to='/homeless' id="navlink">MY HOMELESS HISTORY</Link> 
+            <Link to='/homeless' id="navlink">ANGEL ORIGIN</Link> 
           </nav>
         </header>
         <div className="name-wrapper">
-            <h1>My Stroke History</h1>
+            <h1>Daisy Origin</h1>
         </div>
+        <p className="paragraph">
+          This is a rather epic tale of death-defying adventure and the roundabout way of sincerely sharing
+          the origin of Daisy and the Dream Defenders… and the moment of inspiration for eaglefire
+          productions.
+        </p>
         <p className="paragraph">
           I had a major stroke about five years ago and nearly died. In fact, statistically, I had a better
           chance of dying than living—or being irreparably paralyzed. I will never forget any of it, not one
@@ -106,7 +111,7 @@ const Stroke = () => {
         <p className="paragraph">
           That was the first time I heard the word stroke. No one in my world has had a stroke. I had no
           real idea what a stroke was but I could not move the left side of my body, at all. The paramedic
-          asked me, calm and collected, Mr. Pflueger, can you move your left leg or arm for me? <span className="ital">No, Isaid.
+          asked me, calm and collected, Mr. Pflueger, can you move your left leg or arm for me? <span className="ital"> No, I said.
           </span> Okay, can you move your fingers or toes? <span className="ital">No, I said.</span> Okay, can you feel that? Presumably
           pricking my toes or fingers. <span className="ital">No, I said.</span> And with each response of <span className="ital">No,</span> I began to feel a frightful
           emptiness that I never before imagined. The left side of my body wasn’t working. My
@@ -117,7 +122,7 @@ const Stroke = () => {
           <span className="ital">Okay</span>, the paramedic said, <span className="ital">
           We’re just a few minutes from the hospital, they’ll take very good care
           of you.</span> I mean, he has to say that, right? That’s just what they say? Then he said, 
-          <span className="ital">You’re very lucky they called us so quickly and we happened to be nearby</span>. We didn’t speak again or I don’t
+          <span className="ital"> You’re very lucky they called us so quickly and we happened to be nearby</span>. We didn’t speak again or I don’t
           remember speaking. Something was terribly wrong, so terribly, terribly wrong...
         </p>
         <p className="paragraph">
@@ -162,7 +167,7 @@ const Stroke = () => {
         </p>
         <p className="paragraph">
           As we rolled inside and down a hallway I heard 
-          <span className="ital">major stroke...brain dying... one
+          <span className="ital"> major stroke...brain dying... one
           option...experimental drug...unblock the blood clot...have to break up the clot... potential side
           effects...brain swelling... death... need your permission...need your permission to administer the
           drug...only option...do I have your permission..? Do I have your permission?</span>
@@ -388,7 +393,7 @@ const Stroke = () => {
         When it happens, it’s as if my brain, normally, a sprawling five-lane major interstate of activity is
 suddenly forced onto a little one lane, dirt road. All the information, the input, the fuller
 complexity of self, the whole of me doesn’t have anywhere to go. So, for the briefest moment,
-<span className="ital">the self</span> fractures into jarred and broken pieces, broken pieces of thought and speech—like my
+<span className="ital"> the self</span> fractures into jarred and broken pieces, broken pieces of thought and speech—like my
 speech is trying to catch up, or jump the synaptic gap—<span className="ital">jump the dead space</span>.
         </p>
         <p className="paragraph">
@@ -442,15 +447,15 @@ speech is trying to catch up, or jump the synaptic gap—<span className="ital">
           something that did not yet have words—was only an outer most peripheral sensibility.
         </p>
         <p className="paragraph">
-          The first thing I drew with red and orange magic markers was an space-ambulance with a big
+          The first thing I drew with red and orange magic markers was a space-ambulance with a big
           rocket engine racing through deep space. To where or from where..? No idea. But I drew it over
           and over, until eventually...a dream hospital? And then a very rough sketch of what became the
           character Daisy, someone who would always be there for kids feeling alone or scared, someone
           who would always have their back, defending them...<span className="ital">every kid deserves a Daisy.</span>
         </p>
         <p className="paragraph">
-          It's strange being a writer and writing about this, And I hear myself thinking, almost disbelieving
-          my own experience, still unable to fully grasp it... <span className="ital">Did that really happen? Did I almost die?</span>
+          It's strange being a writer and writing about this. And I hear myself thinking, almost disbelieving
+          my own experience, still unable to fully grasp it... <span className="ital">Did that really happen? Did I almost die? </span>
           Yes... yes I did. Somewhere down deep in my inability to fully comprehend how close I was to
           no longer being here, it almost feels like fiction, but it’s not—it only reads that way.
         </p>

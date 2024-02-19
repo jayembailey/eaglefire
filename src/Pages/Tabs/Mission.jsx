@@ -10,8 +10,8 @@ const Mission = () => {
               <Link to='/' id="navlink">HOME</Link>
               <Link to='/about' id="navlink">ABOUT THE AUTHOR</Link>
               <Link to='/charity' id="navlink">CHARITY T-SHIRTS</Link>
-              <Link to='/stroke' id="navlink">MY STROKE HISTORY</Link>
-              <Link to='/homeless' id="navlink">MY HOMELESS HISTORY</Link>
+              <Link to='/stroke' id="navlink">DAISY ORIGIN</Link>
+              <Link to='/homeless' id="navlink">ANGEL ORIGIN</Link>
             </nav>
             </header>
             <div className="name-wrapper">
@@ -30,7 +30,7 @@ const Mission = () => {
             <p className="paragraph">
               And please, bear with me a moment because I’ve had this particular thought, this singular idea,
               <span className="ital"> this thing</span> in my brain for years. In a good way, I’m almost haunted by it—the idea is an
-              <span className="ital">interactive</span> production company. Honestly, I still don’t know exactly what that means. But it has
+              <span className="ital"> interactive</span> production company. Honestly, I still don’t know exactly what that means. But it has
               to do with involving artists and thinkers and dreamers who want to create and build
               something...<span className="ital">together</span>.
             </p>

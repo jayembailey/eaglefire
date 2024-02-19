@@ -5,6 +5,7 @@ import macCover from './assets/mac-cover.png'
 import unfoundCover from './assets/unfound-cover.jpg'
 import angelCover from './assets/angel-cover.jpg'
 import salemChild from './assets/salem-child.jpg'
+import efpLogo from './assets/EFP_logo.jpg'
 import { Link } from 'react-router-dom'
 import { sendCustomEmail } from './Functions/Email'
 
@@ -13,11 +14,10 @@ import { useEffect, useState } from 'react'
 function App() {
   const [fadeId, setFadeId] = useState('')
   const [messageSent, setMessageSent] = useState(false)
-  const [navOn, setNavOn] = useState(false)
   const [details, setDetails] = useState({
     subject: "",
     message: "",
-    to_email: "jbaileydevelopments@gmail.com", 
+    to_email: "jbaileydevelopments@gmail.com",
     reply_to: "",
     first_name: "",
     last_name: "",
@@ -34,39 +34,41 @@ function App() {
     });
   };
 
-  const handleSendEmail = () => {
-    // sendCustomEmail(details)
+  const handleSendEmail = (e) => {
+    e.preventDefault()
+    sendCustomEmail(details)
     setMessageSent(true)
   };
-
-  const displayNav = () => {
-    setNavOn(!navOn)
-  }
   
-  // useEffect(() => {
-  //   const timeout = setInterval(() => {
-  //     if (fadeId === '') {
-  //       setFadeId('fade-out')
-  //     }
-  //   })
-  // }, 2000)  
+  useEffect(() => {
+      if (fadeId === '') {
+        setFadeId('fade-out')
+      }
+  }, [])  
 
   return (
     <>
-    {/* <div>
-      <img className='coverImg' id={fadeId} src={daisyCover} alt="" />
-    </div> */}
+    <div>
+      <img className='coverImg' id={fadeId} src={efpLogo} alt="eaglefire productions logo" />
+    </div>
       <div className='body'>
         <div className="heading">
-          <h2>eaglefire productions</h2>
+          <Link to={'/'}>
+            {/* <strong id='efp-heading'>eaglefire productions</strong> */}
+            <img className='header-logo' src={efpLogo} alt="eaglefire productions logo" />
+          </Link>
+          <div className="social-box">
+            <Link to={'https://www.instagram.com/salempflueger/'}><i className="fa-brands fa-instagram fa-xl" style={{color: '#ff0088'}}></i></Link>
+            <Link to={'https://www.facebook.com/salem.pflueger'}><i className="fa-brands fa-facebook fa-xl" style={{color: '#0040ff'}}></i></Link>
+          </div>
         </div>
         <header>
           <nav>
               <Link to='/mission' id="navlink">MISSION STATEMENT</Link>
               <Link to='/about' id="navlink">ABOUT THE AUTHOR</Link>
               <Link to='/charity' id="navlink">CHARITY T-SHIRTS</Link>
-              <Link to='/stroke' id="navlink">MY STROKE HISTORY</Link>
-              <Link to='/homeless' id="navlink">MY HOMELESS HISTORY</Link>
+              <Link to='/stroke' id="navlink">DAISY ORIGIN</Link>
+              <Link to='/homeless' id="navlink">ANGEL ORIGIN</Link>
           </nav>
         </header>
         <div>
@@ -80,7 +82,7 @@ function App() {
             <div className='intro-text'>
               <p><span style={{'fontStyle' : 'italic'}}>Hi, I'm Salem...</span><br/>
               <span style={{'fontStyle' : 'italic', 'fontWeight' : 'bold'}}>Agents</span> and everyone, thanks for stopping by!
-              Please, browse arond and take a look at the summary/first
+              Please, browse around and take a look at the summary/first
               10 pages of my books below. Kindly contact me <Link href="#contact-box" style={{'fontWeight' : 'bold'}}>here</Link> for the
               first 50 pages. Welcome to <span style={{'fontStyle' : 'italic'}}>
               eaglefire productions... the readiness is all!</span>
@@ -139,7 +141,7 @@ function App() {
                 <div className="form-contact-box" id='contact-box'>
                     {!messageSent ? <div className="message-form">
                         <h3>Leave a Comment</h3>
-                        <div id='contact-form'>
+                        <form id='contact-form' onSubmit={handleSendEmail}>
                             <div id="name-box">
                                 <div id="first-input">
                                     <label htmlFor="first_name">First Name</label>
@@ -149,7 +151,8 @@ function App() {
                                       onChange={handleDetailsChange}
                                       name="first_name"
                                       id="first_name"
-                                      placeholder="First Name" />
+                                      placeholder="First Name" 
+                                      required={true} />
                                 </div>
                                 <div id="last-input">
                                     <label htmlFor="last_name">Last Name</label>
@@ -159,7 +162,8 @@ function App() {
                                       onChange={handleDetailsChange}
                                       name="last_name"
                                       id="last_name"
-                                      placeholder="Last Name" />
+                                      placeholder="Last Name" 
+                                      required={true}/>
                                 </div>
                             </div>
                             <label htmlFor="subject">Subject</label>
@@ -169,7 +173,8 @@ function App() {
                               onChange={handleDetailsChange}
                               name="subject"
                               id="subject"
-                              placeholder="Subject" />
+                              placeholder="Subject" 
+                              required={true}/>
                             <label htmlFor="reply_to">Email</label>
                             <input
                               type="email"
@@ -177,7 +182,8 @@ function App() {
                               onChange={handleDetailsChange}
                               name="reply_to"
                               id="reply_to"
-                              placeholder="Email" />
+                              placeholder="Email"
+                              required={true}/>
                             <label htmlFor="message">Message</label>
                             <textarea
                               name="message"
@@ -186,13 +192,14 @@ function App() {
                               id="message"
                               cols="30"
                               rows="10"
-                              placeholder="Tell me your story...">
+                              placeholder="Tell me your story..."
+                              required={true}>
                             </textarea>
                             <button
-                              id="submit-button" type="button"
-                              onClick={handleSendEmail}>Send
+                              id="submit-button" type="submit"
+                              >Send
                             </button>
-                        </div>
+                        </form>
                     </div>
                     : 
                      <h3 className='message-sent'>Message sent. <br/><br/>Thanks for reaching out!</h3>}

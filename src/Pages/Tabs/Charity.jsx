@@ -1,5 +1,5 @@
 import React from 'react'
-import shirt from '../../assets/shirt.jpeg'
+import shirt from '../../assets/shirt.png'
 import { Link } from 'react-router-dom'
 
 const Charity = () => {
@@ -11,8 +11,8 @@ const Charity = () => {
             <Link to='/' id="navlink">HOME</Link>
             <Link to='/mission' id="navlink">MISSION STATEMENT</Link>
             <Link to='/about' id="navlink">ABOUT THE AUTHOR</Link>
-            <Link to='/stroke' id="navlink">MY STROKE HISTORY</Link>
-            <Link to='/homeless' id="navlink">MY HOMELESS HISTORY</Link>
+            <Link to='/stroke' id="navlink">DAISY ORIGIN</Link>
+            <Link to='/homeless' id="navlink">ANGEL ORIGIN</Link>
           </nav>
         </header>
         <div className="name-wrapper">
@@ -44,6 +44,14 @@ const Charity = () => {
           To that, the non-profit organization, <span className="ital">First Book</span>, focuses its efforts on those underprivileged kids
           and communities, offering not only books and reading materials but teachers and volunteers,
           both on-line and in person.
+        </p>
+        <p className="paragraph">
+          Dovetailing with helping kids is my book, Daisy and the Dream Defenders. Daisy
+          and her superhero Dream Defenders are dedicated to protecting kids dreams, everywhere.
+          Her spirit shines with powerful devotion to those children who feel alone or scared. The
+          tagline for the book is, <span className="ital">Every kid deserves a Daisy</span>. I think it’s perfect for this first round of
+          charity t-shirts available <Link to={'https://www.customink.com/fundraising/eaglefire-productions-charity-t-shirts'}
+          style={{textDecoration: 'underline'}}>here.</Link> I hope you agree with the spirit of it and I hope you will take a look at the <Link to={'/daisypreview'} style={{textDecoration: 'underline'}}>summary and first ten pages of the book.</Link>
         </p>
         <p className="paragraph">
           Another issue I feel very strongly about is the staggering suicide rate of our soldiers. The
@@ -84,18 +92,19 @@ const Charity = () => {
         </p>
         <p className="paragraph">
           To that end, I’ve reached out to the charity fund-raising department of <span className="ital">Custom Ink</span> and have set a
-          modest goal of 25 <span className="ital">eaglefire</span> productions t-shirts—with all proceeds going to the charities. Below
-          the company logo it will simply read—<span className="ital">Support the Strong</span>. Link here: Custom Ink
+          modest goal of 25 <span className="ital">eaglefire productions</span> t-shirts—with all proceeds going to the charities. Below
+          the company logo it will simply read—<span className="ital">Every Kid Deserves a Daisy</span>. Link <Link to={'https://www.customink.com/fundraising/eaglefire-productions-charity-t-shirts'}
+          style={{textDecoration: 'underline'}}>here.</Link>
         </p>
         <img src={shirt} id='shirt' alt="" />
         <p className="paragraph">
           If you would rather contribute directly to one of the charities—I’ll leave the links here:
         </p>
         <p className="paragraph" style={{'textAlign':'center'}}>
-          <a href="https://www.firstbook.org">First Book</a> — for children’s books/reading/writing
+          <Link to="https://www.firstbook.org" style={{textDecoration: 'underline'}}>First Book</Link> — for children’s books/reading/writing
         </p>
         <p className="paragraph" style={{'textAlign':'center'}}>
-          <a href="https://www.theheadstrongproject.org">The Headstrong Project</a> — for soldiers' mental health
+          <Link to="https://www.theheadstrongproject.org" style={{textDecoration: 'underline'}}>The Headstrong Project</Link> — for soldiers' mental health
         </p>
         <p className="paragraph">
           <span className="ital">Please...and thank you.</span>

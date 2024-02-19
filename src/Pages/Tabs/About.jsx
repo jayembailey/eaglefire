@@ -10,8 +10,8 @@ const About = () => {
             <Link to='/' id="navlink">HOME</Link>
             <Link to='/mission' id="navlink">MISSION STATEMENT</Link>
             <Link to='/charity' id="navlink">CHARITY T-SHIRTS</Link>
-            <Link to='/stroke' id="navlink">MY STROKE HISTORY</Link>
-            <Link to='/homeless' id="navlink">MY HOMELESS HISTORY</Link>
+            <Link to='/stroke' id="navlink">DAISY ORIGIN</Link>
+            <Link to='/homeless' id="navlink">ANGEL ORIGIN</Link>
           </nav>
         </header>
         <div className="name-wrapper">
@@ -110,7 +110,7 @@ const About = () => {
         </p>
         <p className="paragraph">
           From the time I was in college—I’ve followed my gut. I understood from day one it wasn’t about
-          <span className="ital">me.</span> It’s one of the reasons I trusted my instincts pursuing both writing and acting—because I had
+          <span className="ital"> me.</span> It’s one of the reasons I trusted my instincts pursuing both writing and acting—because I had
           my head on straight. It wasn’t about my being a movie star or best-selling author, it was about
           having the privilege to do the work.
         </p>

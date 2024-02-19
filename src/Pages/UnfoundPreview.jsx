@@ -7,10 +7,8 @@ const UnfoundPreview = () => {
     <>
       <div>
         <div className="heading">
-          <h2>Eaglefire Productions</h2>
-          <Link to='/'>
-              <button id='drop-button'>Back</button>
-          </Link>
+          <Link to='/'><h2>eaglefire productions</h2></Link>
+          <Link to='/'><button id='drop-button'>Back</button></Link> 
         </div>
         <iframe src={tuFifty} title='The Unfound Preview'/>
       </div>
