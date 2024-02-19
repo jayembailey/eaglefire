@@ -93,7 +93,7 @@ function App() {
         <div id="main">
             <div id="highlight-section">
                 <div className="header-wrapper">
-                    <h2 id="header-block"><p id="header-text">Books</p></h2>
+                    <h2 id="header-block">Books</h2>
                 </div>
                 <div id="highlight-box">
                     <div className="book-container">
@@ -136,7 +136,7 @@ function App() {
             <p id='quote'>Unto the breach, dear friends, once more...</p>
             <div id="contact-section">
                 <div className="header-wrapper">
-                    <h2 id="header-block" className="contact-header"><p id="header-text">Contact</p></h2>
+                    <h2 id="header-block">Contact</h2>
                 </div>
                 <div className="form-contact-box" id='contact-box'>
                     {!messageSent ? <div className="message-form">
@@ -206,6 +206,7 @@ function App() {
                 </div>
             </div>
           </div>
+          <footer>Site designed by J. Bailey Developments</footer>
       </div>
     </>
   )
