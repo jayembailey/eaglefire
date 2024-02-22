@@ -13,7 +13,7 @@ const AngelPreview = () => {
           </Link>
           <Link to='/'><button id='drop-button'>Back</button></Link>
         </div>
-        <iframe src={adFifty} title='The Angel Dilemma Preview'/>
+        <div className="scroll-wrapper"><iframe src={adFifty} title='The Angel Dilemma Preview'/></div>
       </div>
     </>
   )

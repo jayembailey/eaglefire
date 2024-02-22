@@ -40,21 +40,20 @@ function App() {
     setMessageSent(true)
   };
   
-  useEffect(() => {
-      if (fadeId === '') {
-        setFadeId('fade-out')
-      }
-  }, [])  
+  // useEffect(() => {
+  //     if (fadeId === '') {
+  //       setFadeId('fade-out')
+  //     }
+  // }, [])  
 
   return (
     <>
-    <div>
+    {/* <div>
       <img className='coverImg' id={fadeId} src={efpLogo} alt="eaglefire productions logo" />
-    </div>
+    </div> */}
       <div className='body'>
         <div className="heading">
           <Link to={'/'}>
-            {/* <strong id='efp-heading'>eaglefire productions</strong> */}
             <img className='header-logo' src={efpLogo} alt="eaglefire productions logo" />
           </Link>
           <div className="social-box">
@@ -77,7 +76,7 @@ function App() {
           </div>
           <div className="intro-box">
             <div className="portrait">
-              <img id='intro-portrait' src={salemChild} alt="" />
+              <img id='intro-portrait' src={salemChild} alt="photo of Salem Pflueger" />
             </div>
             <div className='intro-text'>
               <p><span style={{'fontStyle' : 'italic'}}>Hi, I'm Salem...</span><br/>
@@ -143,7 +142,7 @@ function App() {
                         <h3>Leave a Comment</h3>
                         <form id='contact-form' onSubmit={handleSendEmail}>
                             <div id="name-box">
-                                <div id="first-input">
+                                <div id="name-input">
                                     <label htmlFor="first_name">First Name</label>
                                     <input 
                                       type="text"
@@ -154,7 +153,7 @@ function App() {
                                       placeholder="First Name" 
                                       required={true} />
                                 </div>
-                                <div id="last-input">
+                                <div id="name-input">
                                     <label htmlFor="last_name">Last Name</label>
                                     <input
                                       type="text"
