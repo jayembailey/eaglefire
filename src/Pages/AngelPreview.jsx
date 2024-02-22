@@ -6,15 +6,17 @@ import efpLogo from '../assets/EFP_logo.jpg'
 const AngelPreview = () => {
   return (
     <>
-      <div>
-        <div className="heading">
-          <Link to='/'>
-            <img src={efpLogo} className='header-logo' alt="" />
-          </Link>
-          <Link to='/'><button id='drop-button'>Back</button></Link>
-        </div>
-        <div className="scroll-wrapper"><iframe src={adFifty} title='The Angel Dilemma Preview'/></div>
+      <div className="heading">
+        <Link to='/'>
+          <img src={efpLogo} className='header-logo' alt="" />
+        </Link>
+        <div className="empty-div"></div>
+        <Link to='/' id='drop-wrapper'><button id='drop-button'>Back</button></Link>
       </div>
+      <div className='download'>
+        Having trouble viewing?<br/>Download the PDF <a href={adFifty} download={'AngelDilemma10.pdf'} style={{textDecoration: 'underline'}}>here</a>
+      </div>
+      <iframe src={adFifty} title='The Angel Dilemma Preview'/>
     </>
   )
 }

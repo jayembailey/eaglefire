@@ -11,7 +11,11 @@ const UnfoundPreview = () => {
           <Link to='/'>
             <img src={efpLogo} className='header-logo' alt="" />
           </Link>
+          <div className="empty-div"></div>
           <Link to='/'><button id='drop-button'>Back</button></Link> 
+        </div>
+        <div className='download'>
+          Having trouble viewing?<br/>Download the PDF <a href={tuFifty} download={'TheUnfound10.pdf'} style={{textDecoration: 'underline'}}>here</a>
         </div>
         <iframe src={tuFifty} title='The Unfound Preview'/>
       </div>

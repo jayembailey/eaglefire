@@ -41,20 +41,26 @@ body {
 /* End Fader CSS */
 
 .heading {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   margin: 2rem;
+  align-items: center;
 }
 
 .header-logo {
-  max-width: 150px;
+  max-width: 400px;
   border-radius: 10%;
   box-shadow: 0px 0px 15px black;
+  justify-self: start;
 }
 
 .header-logo:hover {
   box-shadow: 0 0 15px black inset;
+}
+
+.social-box {
+  justify-self: end;
+  grid-column: 3;
 }
 
 i {
@@ -157,7 +163,7 @@ h2 {
 }
 
 #highlight-box {
-  margin: 1rem 1rem 1rem 1rem;
+  margin: 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -165,7 +171,7 @@ h2 {
 
 #hl-item {
   width: 100%;
-  height: auto;
+  max-height: 16rem;
   max-width: 12rem;
   border-radius: 1%;
 }
@@ -209,8 +215,8 @@ h3 {
 
 .message-form {
   text-align: center;
-  margin: auto;
-  width: 100%;
+  margin: 0 10rem;
+  /* width: auto; */
 }
 
 #contact-form {
@@ -229,13 +235,14 @@ h3 {
 
 #name-box {
   display: flex;
-  justify-content: space-between;
+  gap: 5rem
 }
 
 input {
   border-color: rgb(225, 175, 26);
   border-radius: 2px;
 }
+
 label {
   margin: 4px 0
 }
@@ -243,6 +250,7 @@ label {
 #name-input {
   display: flex;
   flex-direction: column;
+  width: 50%;
 }
 
 #submit-button {
@@ -255,17 +263,27 @@ label {
 
 /* Preview page-specific */
 
+#drop-wrapper {
+  justify-self: end;
+  margin: 1rem .5rem 0 .5rem;
+}
+
 #drop-button {
   background-color: rgb(45, 45, 45);
   border: 2px solid rgb(225, 175, 26);
   color: rgb(225, 175, 26);
   border-radius: 10%;
   padding: .5rem;
-  width: 4rem;
+  width: 4rem
 }
 
 #drop-button:hover {
   box-shadow: 0 0 5px rgb(225, 175, 26);
+}
+
+.download {
+  color: rgb(225, 175, 26);
+  margin-bottom: 2rem;
 }
 
 .paragraph {
@@ -312,6 +330,10 @@ footer {
   .intro-box {
     margin: 2rem 6rem
   }
+
+  .message-form {
+    margin: 0 6rem
+  }
 }
 
 @media (max-width: 700px) {
@@ -321,6 +343,7 @@ footer {
   }
 
   .heading {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
@@ -358,10 +381,22 @@ footer {
   .paragraph {
     margin: 2rem 3rem
   }
+
+  #name-box {
+    gap: 0
+  }
 }
 
 @media (max-width: 500px) {
   .intro-box {
     margin: 2rem 2rem
+  }
+
+  .message-form {
+    margin: 0 2rem
+  }
+
+  .header-logo {
+    max-width: 275px;
   }
 }

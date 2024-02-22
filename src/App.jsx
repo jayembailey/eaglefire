@@ -53,6 +53,7 @@ function App() {
     </div> */}
       <div className='body'>
         <div className="heading">
+          <div className='empty-div'></div>
           <Link to={'/'}>
             <img className='header-logo' src={efpLogo} alt="eaglefire productions logo" />
           </Link>
