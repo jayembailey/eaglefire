@@ -15,7 +15,7 @@ const DaisyPreview = () => {
           <Link to='/'><button id='drop-button'>Back</button></Link>
         </div>
         <div className='download'>
-          Having trouble viewing?<br/>Download the PDF <a href={ddFifty} download={'Daisy10.pdf'} style={{textDecoration: 'underline'}}>here</a>
+          On mobile or having trouble viewing?<br/>Download the PDF <a href={ddFifty} download={'Daisy10.pdf'} style={{textDecoration: 'underline'}}>here</a>
         </div>
         <iframe src={ddFifty} title='Daisy and the Dream Defenders Preview'/>
       </div>

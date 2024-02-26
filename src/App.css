@@ -107,13 +107,19 @@ a:hover {
 }
 
 .portrait {
-  height: 300px;
-  margin: 2rem
+  margin: 2rem;
 }
 
 #intro-portrait {
-  height: 100%;
+  height: auto;
+  max-height: 800px;
+  width: 100%;
   border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.photo-link {
+  text-decoration: underline;
 }
 
 .intro-text {
@@ -129,7 +135,6 @@ h1 {
   align-items: center;
   height: 2.7rem;
   width: 100%;
-  text-wrap: nowrap;
   font-family: 'Herculanum';
 }
 
@@ -313,6 +318,88 @@ iframe {
 
 /* End preview-specific */
 
+/* Photo page */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 1100px;
+  min-width: 950px;
+  justify-content: space-evenly;
+}
+
+.photo-cont {
+  max-width: 500px;
+}
+
+.gallery-photo {
+  position: relative;
+  border: 3px solid rgb(225, 175, 26);
+}
+
+#sepia-photo {
+  width: 350px;
+  top: 5%;
+  left: 12%;
+}
+
+#leaning-photo {
+  width: 400px;
+  left: 2%;
+  top: 3%
+}
+
+#noglasses-photo {
+  width: 400px;
+  top: -15%;
+}
+
+#child-photo {
+  width: 300px;
+  top: 15%;
+  right: 7%
+}
+
+@media (max-width: 1000px) {
+  .gallery {
+    flex-direction: column;
+    min-width: 0;
+    align-items: center;
+  }
+
+  .gallery-photo {
+    position: inherit;
+    margin: 1rem;
+    width: 100%;
+    height: auto;
+  }
+
+  #sepia-photo {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+  }
+
+  #leaning-photo {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+  }
+
+  #noglasses-photo {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+  }
+
+  #child-photo {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+  }
+}
+/* End photo page */
+
 footer {
   margin: 1rem;
   color: rgb(163, 163, 163);
@@ -334,6 +421,25 @@ footer {
   .message-form {
     margin: 0 6rem
   }
+}
+
+@media (max-width: 900px) {
+  .intro-box {
+    flex-direction: column;
+  }
+
+  .portrait {
+    margin-bottom: 0;
+  }
+
+  #intro-portrait {
+    max-height: 250px;
+  }
+
+  .intro-text {
+    margin: .5rem
+  }
+
 }
 
 @media (max-width: 700px) {
@@ -359,23 +465,12 @@ footer {
   }
 
   .intro-box {
-    flex-direction: column;
     justify-content: space-between;
     padding: 1rem
   }
 
   .portrait {
     margin: 1rem;
-  }
-
-  #intro-portrait {
-    width: 100%;
-    height: auto;
-    max-width: 230px;
-  }
-
-  .intro-text {
-    margin: .5rem
   }
 
   .paragraph {
@@ -388,6 +483,14 @@ footer {
 }
 
 @media (max-width: 500px) {
+  h1 {
+    height: 4.2rem
+  }
+
+  .name-wrapper {
+    height: 4.8rem;
+  }
+
   .intro-box {
     margin: 2rem 2rem
   }
@@ -397,6 +500,15 @@ footer {
   }
 
   .header-logo {
+    width: 100%;
     max-width: 275px;
+  }
+
+  iframe {
+    display: none;
+  }
+
+  .gallery-photo {
+    margin: 1rem 0;
   }
 }

@@ -8,7 +8,6 @@ const sendCustomEmail = (details) => {
             import.meta.env.VITE_EMAIL_TEMPLATE_ID,
             //begin variables defined in template
             {
-                to_email: details.to_email,
                 subject: details.subject,
                 message: details.message,
                 reply_to: details.reply_to,

@@ -4,7 +4,7 @@ import daisyCover from './assets/daisy-cover.png'
 import macCover from './assets/mac-cover.png'
 import unfoundCover from './assets/unfound-cover.jpg'
 import angelCover from './assets/angel-cover.jpg'
-import salemChild from './assets/salem-child.jpg'
+import salemSeated from './assets/salem-pics/seated.jpg'
 import efpLogo from './assets/EFP_logo.jpg'
 import { Link } from 'react-router-dom'
 import { sendCustomEmail } from './Functions/Email'
@@ -17,7 +17,6 @@ function App() {
   const [details, setDetails] = useState({
     subject: "",
     message: "",
-    to_email: "jbaileydevelopments@gmail.com",
     reply_to: "",
     first_name: "",
     last_name: "",
@@ -77,13 +76,14 @@ function App() {
           </div>
           <div className="intro-box">
             <div className="portrait">
-              <img id='intro-portrait' src={salemChild} alt="photo of Salem Pflueger" />
+              <img id='intro-portrait' src={salemSeated} alt="photo of Salem Pflueger" />
+              <Link className='photo-link' to='/photo'>Photo gallery</Link>
             </div>
             <div className='intro-text'>
               <p><span style={{'fontStyle' : 'italic'}}>Hi, I'm Salem...</span><br/>
               <span style={{'fontStyle' : 'italic', 'fontWeight' : 'bold'}}>Agents</span> and everyone, thanks for stopping by!
               Please, browse around and take a look at the summary/first
-              10 pages of my books below. Kindly contact me <Link href="#contact-box" style={{'fontWeight' : 'bold'}}>here</Link> for the
+              10 pages of my books below. Kindly contact me <Link href="#contact-box" style={{'fontWeight' : 'bold', 'textDecoration': 'underline'}}>here</Link> for the
               first 50 pages. Welcome to <span style={{'fontStyle' : 'italic'}}>
               eaglefire productions... the readiness is all!</span>
               </p>

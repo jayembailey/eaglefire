@@ -12,6 +12,7 @@ import About from './Pages/Tabs/About.jsx'
 import Homeless from './Pages/Tabs/Homeless.jsx'
 import Stroke from './Pages/Tabs/Stroke.jsx'
 import Charity from './Pages/Tabs/Charity.jsx'
+import Photo from './Pages/Photo.jsx'
 
 
 const router = createBrowserRouter([
@@ -58,6 +59,10 @@ const router = createBrowserRouter([
   {
     path: '/charity',
     element: <Charity />
+  },
+  {
+    path: '/photo',
+    element: <Photo />
   }
 ])
 

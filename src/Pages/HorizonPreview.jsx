@@ -15,7 +15,7 @@ const HorizonPreview = () => {
           <Link to='/'><button id='drop-button'>Back</button></Link>
         </div>
         <div className='download'>
-          Having trouble viewing?<br/>Download the PDF <a href={uhFifty} download={'UponHorizon10.pdf'} style={{textDecoration: 'underline'}}>here</a>
+          On mobile or having trouble viewing?<br/>Download the PDF <a href={uhFifty} download={'UponHorizon10.pdf'} style={{textDecoration: 'underline'}}>here</a>
         </div>
         <iframe src={uhFifty} title='Upon Horizon Preview'/>
       </div>
