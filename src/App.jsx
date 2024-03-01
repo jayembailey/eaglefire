@@ -7,12 +7,12 @@ import angelCover from './assets/angel-cover.jpg'
 import salemSeated from './assets/salem-pics/seated.jpg'
 import efpLogo from './assets/EFP_logo.jpg'
 import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 import { sendCustomEmail } from './Functions/Email'
-
 import { useEffect, useState } from 'react'
 
 function App() {
-  const [fadeId, setFadeId] = useState('')
+  const [fadeId, setFadeId] = useState(window.sessionStorage.getItem('fadeId'))
   const [messageSent, setMessageSent] = useState(false)
   const [details, setDetails] = useState({
     subject: "",
@@ -21,6 +21,8 @@ function App() {
     first_name: "",
     last_name: "",
   });
+
+  console.log(`fade id = ${fadeId}`)
 
   const handleDetailsChange = (e) => {
     const {name, value} = e.target;
@@ -39,17 +41,19 @@ function App() {
     setMessageSent(true)
   };
   
-  // useEffect(() => {
-  //     if (fadeId === '') {
-  //       setFadeId('fade-out')
-  //     }
-  // }, [])  
+  useEffect(() => {
+    fadeId ? console.log('youve been here before!') : setFadeId('fade-out')
+  }, []);
+
+  useEffect(() => {
+    window.sessionStorage.setItem('fadeId', fadeId);
+  }, [fadeId]);
 
   return (
     <>
-    {/* <div>
-      <img className='coverImg' id={fadeId} src={efpLogo} alt="eaglefire productions logo" />
-    </div> */}
+    <div className='coverContainer' id={fadeId}>
+      <img className='coverImg' src={efpLogo} alt="eaglefire productions logo" />
+    </div>
       <div className='body'>
         <div className="heading">
           <div className='empty-div'></div>
@@ -83,7 +87,7 @@ function App() {
               <p><span style={{'fontStyle' : 'italic'}}>Hi, I'm Salem...</span><br/>
               <span style={{'fontStyle' : 'italic', 'fontWeight' : 'bold'}}>Agents</span> and everyone, thanks for stopping by!
               Please, browse around and take a look at the summary/first
-              10 pages of my books below. Kindly contact me <Link href="#contact-box" style={{'fontWeight' : 'bold', 'textDecoration': 'underline'}}>here</Link> for the
+              10 pages of my books below. Kindly contact me <HashLink to={"/#contact-box"} style={{'fontWeight' : 'bold', 'textDecoration': 'underline'}}>here</HashLink> for the
               first 50 pages. Welcome to <span style={{'fontStyle' : 'italic'}}>
               eaglefire productions... the readiness is all!</span>
               </p>

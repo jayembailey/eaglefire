@@ -40,7 +40,7 @@ const About = () => {
           is? His books aren’t published. He doesn’t even have an agent! He hasn’t acted in twenty years..?
         </p>
         <p className="paragraph">
-          I’m told by social media coaches that revealing yourself, sincerely and honestly is a way to more
+          I’m told by social media coaches that revealing yourself, sincerely and honestly, is a way to more
           authentically build brand. What I’m wanting to build here at <span className="ital">eaglefire</span> is something I still don’t
           quite have the words for. It’s been with me for years, way out there on the peripheral edge, just
           waiting...this idea of what <span className="ital">eaglefire</span> could be. And although it’s still revealing itself, building a
@@ -66,7 +66,7 @@ const About = () => {
           many other odd jobs I’ve lost count.
         </p>
         <p className="paragraph">
-          As an undergrad at, UCSC, I was initially a poly-sci major and was doing a radio internship with
+          As an undergrad at UCSC, I was initially a poly-sci major and was doing a radio internship with
           the NPR affiliate, KUSP, in Santa Cruz. Writing for the school paper, I had plans to be a
           broadcast journalist. I met the local TV station director to inquire about an internship and he
           suggested I take an acting class so that I might feel more comfortable in front of people.
@@ -84,8 +84,8 @@ const About = () => {
         <p className="paragraph">
           After graduating, I moved back out to NYC and jumped back into all the acting classes and
           private coaches I could afford. My first published short story, <span className="ital">Michigan Spring,</span> was nominated
-          for a Pushcart Prize. Everything pertaining to writing and acting looked good, looked promising,
-          it was real and not some sort of delusional dream. I was primed and ready to become a
+          for a Pushcart Prize. Everything pertaining to writing and acting looked good, looked promising—it
+          was real and not some sort of delusional dream. I was primed and ready to become a
           professional writer and actor, all I needed was an agent...
         </p>
         <p className="paragraph">
@@ -98,7 +98,7 @@ const About = () => {
           better because of the failures. I chose better.
         </p>
         <p className="paragraph">
-          What’s potentially clarifying about failure is that it forces you, time and time again, to
+          What’s potentially clarifying about failure is it forces you, time and time again, to
           reconsider. And in my heart, then and now... there is nothing to reconsider. I’m all in and failure
           is not an option. Regardless of how long the road, regardless of how dark the winter—there
           comes the spring. Acceptance isn’t about accepting failure, it’s about accepting that this is the
@@ -111,14 +111,14 @@ const About = () => {
         <p className="paragraph">
           From the time I was in college—I’ve followed my gut. I understood from day one it wasn’t about
           <span className="ital"> me.</span> It’s one of the reasons I trusted my instincts pursuing both writing and acting—because I had
-          my head on straight. It wasn’t about my being a movie star or best-selling author, it was about
+          my head on straight. It wasn’t about me being a movie star or best-selling author, it was about
           having the privilege to do the work.
         </p>
         <p className="paragraph">
           They say everything happens for a reason...I let go of <span className="ital">knowing</span> anything a long time ago.
         </p>
         <p className="paragraph">
-          I imagine that to some, starting a production company without investors and nothing but
+          I imagine to some, starting a production company without investors and with nothing but
           unpublished books may seem silly. But I can live with that, I can live with appearing foolhardy.
           What I can’t live with is not giving it my all, each and every time, year after year, decade after
           decade. I keep writing. I keep believing because...<span className="ital">I don’t know how not to.</span>

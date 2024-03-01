@@ -160,7 +160,7 @@ const Homeless = () => {
           over again.
         </p>
         <p className="paragraph">
-          The lot, the experience had a quietly desperate kind of vibe. People kept to themselves, speaking
+          The lot, the experience, had a quietly desperate kind of vibe. People kept to themselves, speaking
           in low tones, heads down. Sometimes at dinner I might share a word or two with someone, but
           no real conversations—survival isn’t social. People came and went, some for only a night or two,
           some for a few days and then there were the regulars, people who had been there for many
@@ -168,7 +168,7 @@ const Homeless = () => {
         </p>
         <p className="paragraph">
           As one can imagine, it was a very private experience and no one was happy to be there. But
-          somehow, in the strangest most inexplicable way... <span className="ital">I felt okay.</span> The feeling, deeply within, was
+          somehow, in the strangest most inexplicable way... <span className="ital">I felt okay.</span> The feeling, deep within, was
           that I was being guided in some way. Occasionally, I said hello to a couple of the regulars but
           otherwise I had no real conversations with anyone other than the woman who ran the lot. She and
           I became friends and I was glad to know her.
@@ -191,7 +191,7 @@ const Homeless = () => {
           I signed up at the local YMCA so I could continue working out and, more importantly, had a
           place to shower every morning. By the time I left the lot, I was in good shape again. The lot
           offered fruit and bottles of water on the nights there were no meals. It wasn’t bad, I mean, it was
-          horrible sleeping in my car, just horrible—but it wasn’t bad.
+          horrible sleeping in my car, just horrible—but somehow it wasn’t bad.
         </p>
         <p className="paragraph">
           Every morning, when I climbed out of my backseat, it would take four or five minutes to get the

@@ -343,7 +343,7 @@ const Stroke = () => {
           I guess I saved the best for last. The highlight of my hospital adventure was an image I will take
           to my grave. On the day I was to be released, not one, but three doctors walked in and put the
           MRI scan of my brain up on the lightboard —all eyes on the picture of my brain. I felt like a lab
-          rat. They were studying me, my brain, as if I were not laying there in my bed, staring at the same
+          rat. They were studying me, my brain, as if I were not lying there in my bed, staring at the same
           image.
         </p>
         <p className="paragraph">
@@ -370,7 +370,7 @@ const Stroke = () => {
         </p>
         <p className="paragraph">
           Within those micro moments of the needle being off the album, I’m not quite <span className="ital">me</span>. I hear myself
-          say something and, it just doesn’t sound quite right, it doesn’t sound like the me I’ve always
+          say something and it just doesn’t sound quite right, it doesn’t sound like the me I’ve always
           known, as me. When speaking, a word might get stuck, so that I have to think about the word,
           specifically, how to correctly pronounce the word. If I don’t, there’s a tiny almost imperceptible
           stutter or hesitation as my brain searches for the word and how to properly enunciate it.
@@ -390,11 +390,11 @@ const Stroke = () => {
           historically familiar qualities, a likeness and a resemblance of self.
         </p>
         <p className="paragraph">
-        When it happens, it’s as if my brain, normally, a sprawling five-lane major interstate of activity is
-suddenly forced onto a little one lane, dirt road. All the information, the input, the fuller
-complexity of self, the whole of me doesn’t have anywhere to go. So, for the briefest moment,
-<span className="ital"> the self</span> fractures into jarred and broken pieces, broken pieces of thought and speech—like my
-speech is trying to catch up, or jump the synaptic gap—<span className="ital">jump the dead space</span>.
+          When it happens, it’s as if my brain, normally a sprawling five-lane major interstate of activity, is
+          suddenly forced onto a little one lane, dirt road. All the information, the input, the fuller
+          complexity of self, the whole of me doesn’t have anywhere to go. So, for the briefest moment,
+          <span className="ital"> the self</span> fractures into jarred and broken pieces, broken pieces of thought and speech—like my
+          speech is trying to catch up, or jump the synaptic gap—<span className="ital">jump the dead space</span>.
         </p>
         <p className="paragraph">
           It happens more around strangers. When I’m with family or friends, people who really know me,
@@ -414,7 +414,7 @@ speech is trying to catch up, or jump the synaptic gap—<span className="ital">
           from where it had originated—reconnecting itself to itself.
         </p>
         <p className="paragraph">
-          It was scary, you could actually see the electricity, you could see its power and almost magical
+          It was scary, I could actually see the electricity, I could see its power and almost magical
           ability to seemingly self-realize and move through space without guidance, without being
           confined by wires or breakers or anything, not accountable or restrained by its source, just...free.
           I’m...out there, somewhere, finding my way back...to me. The needle lifting off the spinning
@@ -435,7 +435,7 @@ speech is trying to catch up, or jump the synaptic gap—<span className="ital">
         </p>
         <p className="paragraph">
           I have no idea where my stories, my books come from, none whatsoever. And what eventually
-          became <span className="ital">Daisy and the Dream Defenders</span> is a mystery unto itself. But laying there in the hospital,
+          became <span className="ital">Daisy and the Dream Defenders</span> is a mystery unto itself. But lying there in the hospital,
           recovering from the stroke, there was something about the ambulance ride that resonated, it
           stuck—and it didn’t go away.
         </p>

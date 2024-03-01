@@ -35,8 +35,8 @@ const Mission = () => {
               something...<span className="ital">together</span>.
             </p>
             <p className="paragraph">
-              I envision a kind of launch pad for others work: books, short stories, short films, poems, songs,
-              artwork, photographs, etc. It’s about showcasing others work for those, like me, who never had
+              I envision a kind of launch pad for others' work: books, short stories, short films, poems, songs,
+              artwork, photographs, etc. It’s about showcasing others' work for those, like me, who never had
               contacts or knew the right people...or were just a bit unlucky. The goal would be to develop
               enough momentum that agents and publishers and producers might come here to find new talent.
             </p>
@@ -66,8 +66,8 @@ const Mission = () => {
             <p className="paragraph">
               The challenge for me is I write across multiple genres so, by definition, I don’t quite fit into the
               singular brand structure. Of course, I’m hopeful I can reach a broader audience, but the fact is
-              most of us have our story/genre preferences. Some might read only literary works, others might
-              prefer the middle-grade/young adult fantasy-adventure series and still others might quite like the
+              most of us have our story/genre preferences. Some may read only literary works, others may
+              prefer the middle-grade/young adult fantasy-adventure series and still others may quite like the
               off-centered humor of a comedy-adventure series. My books, my genres, are all of the
               above...<span className="ital">How do I brand that?</span>
             </p>

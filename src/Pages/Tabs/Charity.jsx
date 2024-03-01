@@ -25,7 +25,7 @@ const Charity = () => {
           writing resources.
         </p>
         <p className="paragraph">
-          I’m grateful that there are many wonderful charities committed to helping children. What I feel
+          I’m grateful there are many wonderful charities committed to helping children. What I feel
           most strongly about are the kids in the low-income communities who are otherwise without or
           don’t have access to books—and enough teachers.
         </p>
@@ -47,7 +47,7 @@ const Charity = () => {
         </p>
         <p className="paragraph">
           Dovetailing with helping kids is my book, Daisy and the Dream Defenders. Daisy
-          and her superhero Dream Defenders are dedicated to protecting kids dreams, everywhere.
+          and her superhero Dream Defenders are dedicated to defending kids' dreams, everywhere.
           Her spirit shines with powerful devotion to those children who feel alone or scared. The
           tagline for the book is, <span className="ital">Every kid deserves a Daisy</span>. I think it’s perfect for this first round of
           charity t-shirts available <Link to={'https://www.customink.com/fundraising/eaglefire-productions-charity-t-shirts'}
@@ -86,9 +86,8 @@ const Charity = () => {
         </p>
         <p className="paragraph">
           Right out of the gate, it’s deeply important to me that <span className="ital">eaglefire productions</span> be founded on a
-          commitment to supporting and helping others. I’m driven to build something that—apart from
-          writing, acting, directing and producing engaging stories and films—is also known as being
-          socially conscious and steadfast in raising funds for some of our most important causes.
+          commitment to supporting and helping others. Apart from writing, acting, directing and producing engaging stories and films, 
+          I’m driven to build something that is also known as being socially conscious and steadfast in raising funds for some of our most important causes.
         </p>
         <p className="paragraph">
           To that end, I’ve reached out to the charity fund-raising department of <span className="ital">Custom Ink</span> and have set a
