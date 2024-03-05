@@ -1,5 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/dist/
-    - /bin/cp index.html $DEPLOYPATH
+    - export DEPLOYPATH=/src/
+    - npm run build
+    - /dist/index.html $DEPLOYPATH
