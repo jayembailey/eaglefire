@@ -1,5 +1,5 @@
 import React from 'react'
-import shirt from '../../assets/shirt.png'
+import shirt from '../../assets/shirt.jpg'
 import { Link } from 'react-router-dom'
 
 const Charity = () => {
@@ -18,6 +18,10 @@ const Charity = () => {
         <div className="name-wrapper">
             <h1>Charities</h1>
         </div>
+        <h3 className='ital'>Because every kid deserves a Daisy...</h3>
+        <Link to={'https://www.customink.com/fundraising/eaglefire-productions-charity-t-shirts'}>
+          <img src={shirt} id='shirt' alt="daisy and the dream defenders charity t-shirt" />
+        </Link>
         <p className="paragraph">
           Allow me to say a few words about the charities to which I’m committed and what they mean to
           me. I grew up surrounded by books—books that offered entertainment but also insights and
@@ -41,7 +45,7 @@ const Charity = () => {
           becoming the best they can be with increased reading and writing development.
         </p>
         <p className="paragraph">
-          To that, the non-profit organization, <span className="ital">First Book</span>, focuses its efforts on those underprivileged kids
+          To that, the non-profit organization, <Link to="https://www.firstbook.org"><span className="ital">First Book</span></Link>, focuses its efforts on those underprivileged kids
           and communities, offering not only books and reading materials but teachers and volunteers,
           both on-line and in person.
         </p>
@@ -73,7 +77,7 @@ const Charity = () => {
         <p className="paragraph">
           Thankfully, there are many great charities supporting our soldiers—what resonates the most for
           me is a non-profit group that is exclusively dedicated to providing therapy and counseling
-          resources. <span className="ital">The Headstrong Project</span> does just that, providing therapists and counselors who are
+          resources. <Link to="https://www.theheadstrongproject.org"><span className="ital">The Headstrong Project</span></Link> does just that, providing therapists and counselors who are
           devoted to helping soldiers work through the unimaginable stresses of combat. Please, let’s help
           to expand the mental health resources available to them—steadfast support that allows them to
           process, understand and heal from the experiences so few of us can even imagine. It’s not
@@ -92,7 +96,7 @@ const Charity = () => {
         <p className="paragraph">
           To that end, I’ve reached out to the charity fund-raising department of <span className="ital">Custom Ink</span> and have set a
           modest goal of 25 <span className="ital">eaglefire productions</span> t-shirts—with all proceeds going to the charities. Below
-          the company logo it will simply read—<span className="ital">Every Kid Deserves a Daisy</span>. Link <Link to={'https://www.customink.com/fundraising/eaglefire-productions-charity-t-shirts'}
+          the company logo it will simply read—<span className="ital">Every Kid Deserves a Daisy</span>. Buy or donate <Link to={'https://www.customink.com/fundraising/eaglefire-productions-charity-t-shirts'}
           style={{textDecoration: 'underline'}}>here.</Link>
         </p>
         <img src={shirt} id='shirt' alt="" />

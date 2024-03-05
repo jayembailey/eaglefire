@@ -216,6 +216,7 @@ h4 {
 
 h3 {
   text-align: center;
+  margin: 1.5rem
 }
 
 #quote {
@@ -319,7 +320,8 @@ iframe {
 }
 
 #shirt {
-  width: 30%
+  width: 20%;
+  height: auto
 }
 
 /* End preview-specific */
@@ -427,6 +429,10 @@ footer {
   .message-form {
     margin: 0 6rem
   }
+
+  #shirt {
+    width: 25%;
+  }
 }
 
 @media (max-width: 900px) {
@@ -486,6 +492,10 @@ footer {
   #name-box {
     gap: 0
   }
+
+  #shirt {
+    width: 40%;
+  }
 }
 
 @media (max-width: 500px) {
@@ -516,5 +526,9 @@ footer {
 
   .gallery-photo {
     margin: 1rem 0;
+  }
+
+  #shirt {
+    width: 50%;
   }
 }
