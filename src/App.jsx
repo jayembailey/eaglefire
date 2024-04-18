@@ -4,8 +4,10 @@ import daisyCover from './assets/daisy-cover.png'
 import macCover from './assets/mac-cover.png'
 import unfoundCover from './assets/unfound-cover.jpg'
 import angelCover from './assets/angel-cover.jpg'
+import amoebaCover from './assets/amoeba-cover.png'
 import salemSeated from './assets/salem-pics/seated.jpg'
 import efpLogo from './assets/EFP_logo.jpg'
+import Video from './assets/salemmarch2024.mov'
 import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
 import { sendCustomEmail } from './Functions/Email'
@@ -61,8 +63,9 @@ function App() {
             <img className='header-logo' src={efpLogo} alt="eaglefire productions logo" />
           </Link>
           <div className="social-box">
-            <Link to={'https://www.instagram.com/salempflueger/'}><i className="fa-brands fa-instagram fa-xl" style={{color: '#ff0088'}}></i></Link>
-            <Link to={'https://www.facebook.com/salem.pflueger'}><i className="fa-brands fa-facebook fa-xl" style={{color: '#0040ff'}}></i></Link>
+            <Link to={'https://www.linkedin.com/company/eaglefire-productions/'}><i className="fa-brands fa-linkedin fa-xl" style={{color: '#0074cc'}}></i></Link>
+            <Link to={'https://www.instagram.com/eaglefireproductions/'}><i className="fa-brands fa-instagram fa-xl" style={{color: '#ff0088'}}></i></Link>
+            <Link to={'https://www.facebook.com/eaglefire.productions'}><i className="fa-brands fa-facebook fa-xl" style={{color: '#0040ff'}}></i></Link>
           </div>
         </div>
         <header>
@@ -81,16 +84,28 @@ function App() {
           <div className="intro-box">
             <div className="portrait">
               <img id='intro-portrait' src={salemSeated} alt="photo of Salem Pflueger" />
-              <Link className='photo-link' to='/photo'>Photo gallery</Link>
+              <Link className='photo-link' to='/photo'>actor photo gallery</Link>
             </div>
             <div className='intro-text'>
               <p><span style={{'fontStyle' : 'italic'}}>Hi, I'm Salem...</span><br/>
-              <span style={{'fontStyle' : 'italic', 'fontWeight' : 'bold'}}>Agents</span> and everyone, thanks for stopping by!
+              <span style={{'fontWeight' : 'bold'}}>Agents</span> and everyone, thanks for stopping by!
               Please, browse around and take a look at the summary/first
               10 pages of my books below. Kindly contact me <HashLink to={"/#contact-box"} style={{'fontWeight' : 'bold', 'textDecoration': 'underline'}}>here</HashLink> for the
-              first 50 pages. Welcome to <span style={{'fontStyle' : 'italic'}}>
-              eaglefire productions... the readiness is all!</span>
+              first 50 pages. Welcome to eaglefire productions... <span style={{'fontStyle' : 'italic'}}>
+              the readiness is all!</span>
               </p>
+            </div>
+          </div>
+          <div id='video-section'>
+            <video id='video-intro' width='80%' height='auto' autoPlay muted controls>
+              <source src={Video} type='video/mp4' />
+            </video>
+            <div className='book-container'>
+              <h3>New Book!<br/>Click below for summary<br/>and animaton</h3>
+              <Link to='/amoebapreview'>
+                <img id="hl-item" src={amoebaCover} alt='daisy and the dream defenders book cover' />
+                <p id="new-preview">Summary and Animation</p>
+              </Link>
             </div>
           </div>
         </div>
@@ -102,8 +117,8 @@ function App() {
                 <div id="highlight-box">
                     <div className="book-container">
                           <Link to='/daisypreview'>
-                            <img id="hl-item" src={daisyCover} alt='daisy and the dream defenders book cover' />
-                            <p id="book-preview-link">Summary and First 10 Pages</p>
+                            <img id="hl-item" src={daisyCover} alt='amoebas book cover' />
+                            <p id="book-preview-link">Summary and Animated Intro</p>
                           </Link>
                         <h4>Daisy and the<br/>Dream Defenders</h4>
                     </div>

@@ -7,6 +7,7 @@ import AngelPreview from './Pages/AngelPreview.jsx'
 import HorizonPreview from './Pages/HorizonPreview.jsx'
 import MacJonesPreview from './Pages/MacJonesPreview.jsx'
 import UnfoundPreview from './Pages/UnfoundPreview.jsx'
+import AmoebaPreview from './Pages/AmoebaPreview.jsx'
 import Mission from './Pages/Tabs/Mission.jsx'
 import About from './Pages/Tabs/About.jsx'
 import Homeless from './Pages/Tabs/Homeless.jsx'
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
   {
     path: '/unfoundpreview',
     element: <UnfoundPreview />
+  },
+  {
+    path: '/amoebapreview',
+    element: <AmoebaPreview />
   },
   {
     path: '/mission',

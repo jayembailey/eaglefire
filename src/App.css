@@ -132,6 +132,16 @@ a:hover {
   margin: 2rem
 }
 
+#video-section {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+}
+
+#video-intro {
+  max-width: 600px;
+}
+
 h1 {
   margin: 2rem 0;
   background-color: rgb(28, 28, 28);
@@ -200,7 +210,6 @@ h4 {
   position: relative;
   margin: 1rem;
   text-align: center;
-  
 }
 
 #book-preview-link {
@@ -210,6 +219,17 @@ h4 {
   display: flex;
   position: absolute;
   top: 30%;
+  left: 26%;
+  width: 50%;
+}
+
+#new-preview {
+  font-weight: 600;
+  font-size: large;
+  z-index: -1;
+  display: flex;
+  position: absolute;
+  bottom: 25%;
   left: 26%;
   width: 50%;
 }
@@ -328,10 +348,11 @@ iframe {
 
 /* Photo page */
 .gallery {
+  margin: auto;
+  align-self: center;
   display: flex;
   flex-wrap: wrap;
-  margin: auto;
-  max-width: 1100px;
+  max-width: 1035px;
   min-width: 950px;
   justify-content: space-evenly;
 }
@@ -341,6 +362,7 @@ iframe {
 }
 
 .gallery-photo {
+  max-width: 400px;
   position: relative;
   border: 3px solid rgb(225, 175, 26);
 }
@@ -366,6 +388,39 @@ iframe {
   width: 300px;
   top: 15%;
   right: 7%
+}
+
+#bench-photo {
+  width: 325px;
+  top: 7%;
+  left: 10%
+}
+
+#computer-photo {
+  width: 400px;
+  left: 2%;
+  top: -5%
+}
+
+#out-table-photo {
+  width: 400px;
+  left: 7%;
+}
+
+#teen-photo {
+  width: 280px;
+  top: 15%;
+  left: -4%
+}
+
+#wall-jacket-photo {
+  margin-top: 5%;
+  left: 5.5%
+}
+
+#no-jacket-photo {
+  margin-top: 5%;
+  left: -5.5%
 }
 
 @media (max-width: 1000px) {
@@ -436,6 +491,16 @@ footer {
 }
 
 @media (max-width: 900px) {
+  .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-box {
+    margin-top: 2rem
+  }
+
   .intro-box {
     flex-direction: column;
   }
@@ -458,16 +523,6 @@ footer {
   #drop-button {
     display: inline-block;
     margin-top: 1rem;
-  }
-
-  .heading {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .social-box {
-    margin-top: 2rem
   }
 
   nav {
