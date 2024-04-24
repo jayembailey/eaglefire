@@ -126,6 +126,7 @@ a:hover {
 
 .photo-link {
   text-decoration: underline;
+  color: rgb(208, 208, 208);
 }
 
 .intro-text {
@@ -134,12 +135,20 @@ a:hover {
 
 #video-section {
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 2rem;
+  margin: 1rem 6rem;
+  align-items: center;
 }
 
 #video-intro {
-  max-width: 600px;
+  max-width: 750px;
+  border-radius: 10px;
+}
+
+h4#new-book {
+  font-family: 'Herculanum';
+  color: rgb(225, 175, 26);
+  line-height: 1.2;
+  margin: 0 0 1rem 0
 }
 
 h1 {
@@ -191,9 +200,8 @@ h2 {
 }
 
 #hl-item {
-  width: 100%;
-  max-height: 16rem;
-  max-width: 12rem;
+  height: 16rem;
+  width: 10rem;
   border-radius: 1%;
 }
 
@@ -218,7 +226,7 @@ h4 {
   z-index: -1;
   display: flex;
   position: absolute;
-  top: 30%;
+  top: 24%;
   left: 26%;
   width: 50%;
 }
@@ -229,14 +237,18 @@ h4 {
   z-index: -1;
   display: flex;
   position: absolute;
-  bottom: 25%;
-  left: 26%;
+  bottom: 30%;
+  left: 25%;
   width: 50%;
 }
 
 h3 {
   text-align: center;
   margin: 1.5rem
+}
+
+h3#amoeba-sub {
+  line-height: 1.8;
 }
 
 #quote {
@@ -322,6 +334,7 @@ label {
   margin: 2rem 12rem;
   font-size: large;
   text-align: justify;
+  text-indent: 3rem;
 }
 
 .ital {
@@ -358,11 +371,11 @@ iframe {
 }
 
 .photo-cont {
-  max-width: 500px;
+  max-width: 800px;
 }
 
 .gallery-photo {
-  max-width: 400px;
+  max-width: 700px;
   position: relative;
   border: 3px solid rgb(225, 175, 26);
 }
@@ -413,12 +426,19 @@ iframe {
   left: -4%
 }
 
+#grandma-photo {
+  margin-top: 3%;
+  left: -0.2%
+}
+
 #wall-jacket-photo {
+  width: 400px;
   margin-top: 5%;
   left: 5.5%
 }
 
 #no-jacket-photo {
+  width: 400px;
   margin-top: 5%;
   left: -5.5%
 }
@@ -432,9 +452,8 @@ iframe {
 
   .gallery-photo {
     position: inherit;
-    margin: 1rem;
-    width: 100%;
-    height: auto;
+    margin: 1rem 0;
+
   }
 
   #sepia-photo {
@@ -460,6 +479,48 @@ iframe {
     height: auto;
     max-width: 300px;
   }
+
+  #bench-photo {
+    width: 100%;
+    height: auto;
+    max-width: 325px;
+  }
+
+  #computer-photo {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+  }
+
+  #out-table-photo {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+  }
+
+  #teen-photo {
+    width: 100%;
+    height: auto;
+    max-width: 280px;
+  }
+
+  #grandma-photo {
+    width:100%;
+    height: auto;
+    max-width: 550px;
+  }
+
+  #wall-jacket-photo {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+  }
+
+  #no-jacket-photo {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+  }
 }
 /* End photo page */
 
@@ -479,6 +540,10 @@ footer {
 
   .intro-box {
     margin: 2rem 6rem
+  }
+
+  #video-section {
+    margin: 2rem 3rem
   }
 
   .message-form {
@@ -515,6 +580,14 @@ footer {
 
   .intro-text {
     margin: .5rem
+  }
+
+  #video-section {
+    flex-direction: column;
+  }
+
+  #video-intro {
+    width: 100%;
   }
 
 }
@@ -566,6 +639,10 @@ footer {
     margin: 2rem 2rem
   }
 
+  #video-section {
+    margin: 2rem 1rem
+  }
+
   .message-form {
     margin: 0 2rem
   }
@@ -577,6 +654,10 @@ footer {
 
   iframe {
     display: none;
+  }
+
+  .paragraph {
+    margin: 2rem 1rem;
   }
 
   .gallery-photo {

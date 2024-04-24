@@ -1,5 +1,5 @@
 import '../App.css'
-import macFifty from '../assets/MAC10.pdf'
+import macTen from '../assets/summaries/MAC10.pdf'
 import { Link } from 'react-router-dom'
 import efpLogo from '../assets/EFP_logo.jpg'
 
@@ -15,9 +15,9 @@ const MacJonesPreview = () => {
           <Link to='/'><button id='drop-button'>Back</button></Link>
         </div>
         <div className='download'>
-          On mobile or having trouble viewing?<br/>Download the PDF <a href={macFifty} download={'MacJones10.pdf'} style={{textDecoration: 'underline'}}>here</a>
+          On mobile or having trouble viewing?<br/>Download the PDF <a href={macTen} download={'MacJones10.pdf'} style={{textDecoration: 'underline'}}>here</a>
         </div>
-        <iframe src={macFifty} title='Mac Jones Book 1 Preview'/>
+        <iframe src={macTen} title='Mac Jones Book 1 Preview'/>
       </div>
     </>
   )

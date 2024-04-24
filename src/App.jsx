@@ -97,11 +97,11 @@ function App() {
             </div>
           </div>
           <div id='video-section'>
-            <video id='video-intro' width='80%' height='auto' autoPlay muted controls>
+            <video id='video-intro' width='80%' height='auto' autoPlay controls>
               <source src={Video} type='video/mp4' />
             </video>
             <div className='book-container'>
-              <h3>New Book!<br/>Click below for summary<br/>and animaton</h3>
+              <h4 id='new-book'>New Book!<br/>Click below for summary and animation</h4>
               <Link to='/amoebapreview'>
                 <img id="hl-item" src={amoebaCover} alt='daisy and the dream defenders book cover' />
                 <p id="new-preview">Summary and Animation</p>
@@ -116,39 +116,39 @@ function App() {
                 </div>
                 <div id="highlight-box">
                     <div className="book-container">
-                          <Link to='/daisypreview'>
-                            <img id="hl-item" src={daisyCover} alt='amoebas book cover' />
-                            <p id="book-preview-link">Summary and Animated Intro</p>
-                          </Link>
-                        <h4>Daisy and the<br/>Dream Defenders</h4>
+                      <Link to='/daisypreview'>
+                        <img id="hl-item" src={daisyCover} alt='amoebas book cover' />
+                        <p id="book-preview-link">Summary and First 10 Pages</p>
+                      </Link>
+                      <h4>Daisy and the<br/>Dream Defenders</h4>
                     </div>
                     <div className="book-container">
-                        <Link to='/horizonpreview'>
-                          <img id="hl-item" src={horizonCover} alt='upon horizon book cover' />
-                            <p id="book-preview-link">Summary and First 10 Pages</p>
-                        </Link>
-                        <h4>Upon Horizon</h4>
+                      <Link to='/horizonpreview'>
+                        <img id="hl-item" src={horizonCover} alt='upon horizon book cover' />
+                        <p id="book-preview-link">Summary and First 10 Pages</p>
+                      </Link>
+                      <h4>Upon Horizon</h4>
                     </div>
                     <div className="book-container">
-                        <Link to='/angelpreview'>
-                          <img id="hl-item" src={angelCover} alt='the angel dilemma book cover' />
-                            <p id="book-preview-link">Summary and First 10 Pages</p>
-                        </Link>
-                        <h4>The Angel Dilemma</h4>
+                      <Link to='/angelpreview'>
+                        <img id="hl-item" src={angelCover} alt='the angel dilemma book cover' />
+                          <p id="book-preview-link">Summary and First 10 Pages</p>
+                      </Link>
+                      <h4>The Angel Dilemma</h4>
                     </div>
                     <div className="book-container">
-                        <Link to='/unfoundpreview'>
-                          <img id="hl-item" src={unfoundCover} alt='the unfound book cover' />
-                            <p id="book-preview-link">Summary and First 10 Pages</p>
-                        </Link>
-                        <h4>The Unfound</h4>
+                      <Link to='/unfoundpreview'>
+                        <img id="hl-item" src={unfoundCover} alt='the unfound book cover' />
+                          <p id="book-preview-link">Summary and First 10 Pages</p>
+                      </Link>
+                      <h4>The Unfound</h4>
                     </div>
                     <div className="book-container">
-                        <Link to='/macjonespreview'>
-                          <img id="hl-item" src={macCover} alt='mac jones book cover' />
-                            <p id="book-preview-link">Summary and First 10 Pages</p>
-                        </Link>
-                        <h4>Mac Jones<br/>The Plumber-Astronaut<br/>who Saved the World</h4>
+                      <Link to='/macjonespreview'>
+                        <img id="hl-item" src={macCover} alt='mac jones book cover' />
+                          <p id="book-preview-link">Summary and First 10 Pages</p>
+                      </Link>
+                      <h4>Mac Jones<br/>The Plumber-Astronaut<br/>who Saved the World</h4>
                     </div>
                 </div>
             </div>

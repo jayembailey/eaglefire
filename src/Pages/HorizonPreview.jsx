@@ -1,5 +1,5 @@
 import '../App.css'
-import uhFifty from '../assets/UH10.pdf'
+import uhTen from '../assets/summaries/UH10.pdf'
 import { Link } from 'react-router-dom'
 import efpLogo from '../assets/EFP_logo.jpg'
 
@@ -15,9 +15,9 @@ const HorizonPreview = () => {
           <Link to='/'><button id='drop-button'>Back</button></Link>
         </div>
         <div className='download'>
-          On mobile or having trouble viewing?<br/>Download the PDF <a href={uhFifty} download={'UponHorizon10.pdf'} style={{textDecoration: 'underline'}}>here</a>
+          On mobile or having trouble viewing?<br/>Download the PDF <a href={uhTen} download={'UponHorizon10.pdf'} style={{textDecoration: 'underline'}}>here</a>
         </div>
-        <iframe src={uhFifty} title='Upon Horizon Preview'/>
+        <iframe src={uhTen} title='Upon Horizon Preview'/>
       </div>
     </>
   )
