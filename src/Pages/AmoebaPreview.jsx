@@ -1,7 +1,7 @@
 import '../App.css'
 import { Link } from 'react-router-dom'
 import efpLogo from '../assets/EFP_logo.jpg'
-import amoebaVid from '../assets/AmoebaAnimation.mp4'
+import amoebaVid from '../assets/AmoebaAnimation1.mp4'
 
 const AngelPreview = () => {
   return (
