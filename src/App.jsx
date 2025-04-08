@@ -6,6 +6,8 @@ import unfoundCover from './assets/unfound-cover.jpg'
 import angelCover from './assets/angel-cover.jpg'
 import amoebaCover from './assets/amoeba-cover.png'
 import salemSeated from './assets/salem-pics/seated.jpg'
+import salemOutTable from './assets/salem-pics/outside-table.jpg'
+
 import efpLogo from './assets/EFP_logo.jpg'
 import Video from './assets/salemmarch2024.mov'
 import { Link } from 'react-router-dom'
@@ -70,11 +72,11 @@ function App() {
         </div>
         <header>
           <nav>
-              <Link to='/mission' id="navlink">MISSION STATEMENT</Link>
+              {/* <Link to='/mission' id="navlink">MISSION STATEMENT</Link> */}
               <Link to='/about' id="navlink">ABOUT THE AUTHOR</Link>
-              <Link to='/charity' id="navlink">CHARITY T-SHIRTS</Link>
+              {/* <Link to='/charity' id="navlink">CHARITY T-SHIRTS</Link>
               <Link to='/stroke' id="navlink">DAISY ORIGIN</Link>
-              <Link to='/homeless' id="navlink">ANGEL ORIGIN</Link>
+              <Link to='/homeless' id="navlink">ANGEL ORIGIN</Link> */}
           </nav>
         </header>
         <div>
@@ -83,8 +85,8 @@ function App() {
           </div>
           <div className="intro-box">
             <div className="portrait">
-              <img id='intro-portrait' src={salemSeated} alt="photo of Salem Pflueger" />
-              <Link className='photo-link' to='/photo'>actor photo gallery</Link>
+              <img id='intro-portrait' src={salemOutTable} alt="photo of Salem Pflueger" />
+              {/* <Link className='photo-link' to='/photo'>actor photo gallery</Link> */}
             </div>
             <div className='intro-text'>
               <p><span style={{'fontStyle' : 'italic'}}>Hi, I'm Salem...</span><br/>
@@ -97,16 +99,10 @@ function App() {
             </div>
           </div>
           <div id='video-section'>
-            <video id='video-intro' width='80%' height='auto' autoPlay controls>
+            {/* <video id='video-intro' width='80%' height='auto' autoPlay controls>
               <source src={Video} type='video/mp4' />
-            </video>
-            <div className='book-container'>
-              <h4 id='new-book'>New Book!<br/>Click below for summary and animation</h4>
-              <Link to='/amoebapreview'>
-                <img id="hl-item" src={amoebaCover} alt='daisy and the dream defenders book cover' />
-                <p id="new-preview">Summary and Animation</p>
-              </Link>
-            </div>
+            </video> */}
+            
           </div>
         </div>
         <div id="main">
@@ -115,6 +111,14 @@ function App() {
                     <h2 id="header-block">Books</h2>
                 </div>
                 <div id="highlight-box">
+                    <div className='book-container'>
+                      {/* <h4 id='new-book'>In progress!<br/>Click below for summary and animation</h4> */}
+                        <Link to='/amoebapreview'>
+                          <img id="hl-item" src={amoebaCover} alt='daisy and the dream defenders book cover' />
+                          <p id="new-preview">Summary and Animation</p>
+                        </Link>
+                        <h4><span id='new-book'>In Progress!</span><br/>Adventures of the <br/>American Amoebas!</h4>
+                    </div>
                     <div className="book-container">
                       <Link to='/daisypreview'>
                         <img id="hl-item" src={daisyCover} alt='amoebas book cover' />
@@ -230,5 +234,12 @@ function App() {
     </>
   )
 }
+
+// You will notice a lot of things commented out. Client wanted a lot of things deleted,
+// but I chose to simply comment them out in case anyone changed their minds.
+// The original site took a lot of work to format and get together, so I, the developer,
+// am reluctant to simply delete it. If you ever need to lighten things useParams, just
+// delete the commented sections and the css items to which they refer. Happy coding!
+
 
 export default App
