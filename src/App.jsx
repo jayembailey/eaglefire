@@ -73,7 +73,7 @@ function App() {
         <header>
           <nav>
               {/* <Link to='/mission' id="navlink">MISSION STATEMENT</Link> */}
-              <Link to='/about' id="navlink">ABOUT THE AUTHOR</Link>
+              {/* <Link to='/about' id="navlink">ABOUT THE AUTHOR</Link> */}
               {/* <Link to='/charity' id="navlink">CHARITY T-SHIRTS</Link>
               <Link to='/stroke' id="navlink">DAISY ORIGIN</Link>
               <Link to='/homeless' id="navlink">ANGEL ORIGIN</Link> */}
@@ -111,14 +111,6 @@ function App() {
                     <h2 id="header-block">Books</h2>
                 </div>
                 <div id="highlight-box">
-                    <div className='book-container'>
-                      {/* <h4 id='new-book'>In progress!<br/>Click below for summary and animation</h4> */}
-                        <Link to='/amoebapreview'>
-                          <img id="hl-item" src={amoebaCover} alt='daisy and the dream defenders book cover' />
-                          <p id="new-preview">Summary and Animation</p>
-                        </Link>
-                        <h4><span id='new-book'>In Progress!</span><br/>Adventures of the <br/>American Amoebas!</h4>
-                    </div>
                     <div className="book-container">
                       <Link to='/daisypreview'>
                         <img id="hl-item" src={daisyCover} alt='amoebas book cover' />
@@ -153,6 +145,13 @@ function App() {
                           <p id="book-preview-link">Summary and First 10 Pages</p>
                       </Link>
                       <h4>Mac Jones<br/>The Plumber-Astronaut<br/>who Saved the World</h4>
+                    </div>
+                    <div className='book-container'>
+                        <Link to='/amoebapreview'>
+                          <img id="hl-item" src={amoebaCover} alt='daisy and the dream defenders book cover' />
+                          <p id="new-preview">Summary and Animation</p>
+                        </Link>
+                        <h4><span id='new-book'>In Progress!</span><br/>Adventures of the <br/>American Amoebas!</h4>
                     </div>
                 </div>
             </div>
